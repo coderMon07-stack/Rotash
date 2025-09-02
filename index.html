@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotash Dairy - Pure, Fresh, Delicious</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥛</text></svg>">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Rotash</a>
+            <ul class="nav-links">
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#process">Our Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <div class="theme-switcher">
+                    <!-- UPDATED THEME TOGGLE BUTTON -->
+                    <button id="theme-toggle" aria-label="Toggle light and dark themes">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.24 17 7 17h12v-2H7l1.1-2h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    <span id="cart-count">0</span>
+                </div>
+                <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#why-us" class="mobile-nav-link">Why Us</a>
+        <a href="#products" class="mobile-nav-link">Products</a>
+        <a href="#process" class="mobile-nav-link">Our Process</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content fade-in">
+                <h1>Purely from Nature. <br>Perfected for You.</h1>
+                <p>Discover the rich taste of Zakho's finest dairy.</p>
+                <a href="#products" class="btn">Explore Our Products</a>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-us">
+            <div class="container">
+                <h2 class="section-title reveal">Why Rotash?</h2>
+                <div class="features-grid">
+                    <div class="feature-item reveal">
+                        <div class="icon-circle"><span>🌱</span></div>
+                        <h3>Always Fresh</h3>
+                        <p>Delivered fresh from our local farms, ensuring peak flavor and nutrition.</p>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="icon-circle"><span>🏆</span></div>
+                        <h3>Unmatched Quality</h3>
+                        <p>We adhere to the highest standards, from the pasture to the package.</p>
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="icon-circle"><span>💚</span></div>
+                        <h3>100% Natural</h3>
+                        <p>No artificial additives. Just pure, wholesome dairy goodness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Product Showcase -->
+        <section id="products">
+            <div class="container">
+                <h2 class="section-title reveal">Our Handcrafted Products</h2>
+                <div class="product-grid">
+                    <!-- Products dynamically inserted by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section id="process">
+            <div class="container">
+                <h2 class="section-title reveal">From Farm to Family</h2>
+                <div class="process-steps">
+                    <div class="step reveal">
+                        <img src="https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Happy Cows Grazing">
+                        <h4>1. Ethical Farming</h4>
+                        <p>Our cows graze on lush pastures, living happy and healthy lives.</p>
+                    </div>
+                    <div class="step reveal">
+                        <img src="https://images.pexels.com/photos/7993033/pexels-photo-7993033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Milk processing facility">
+                        <h4>2. Pure Processing</h4>
+                        <p>We use state-of-the-art technology to gently pasteurize our milk.</p>
+                    </div>
+                    <div class="step reveal">
+                        <img src="https://images.pexels.com/photos/8130986/pexels-photo-8130986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Packaging dairy products">
+                        <h4>3. Mindful Packaging</h4>
+                        <p>Our products are packaged sustainably to lock in freshness for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <div class="container reveal">
+                 <h2 class="section-title">What Our Customers Say</h2>
+                <blockquote>
+                    "The taste is just incredible! You can tell it's made with care. Rotash yogurt is a daily staple for my family now."
+                    <cite>— A Happy Customer in Zakho</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location">
+            <div class="container">
+                <h2 class="section-title reveal">Find Us in Zakho</h2>
+                <div class="map-container reveal">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51332.3333333306!2d42.65691901861537!3d37.1450257257917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400901416d808c45%3A0x7c73a4a35011df6!2sZakho%2C%2Duhok%20Governorate%2C%20Iraqi%20Kurdistan!5e0!3m2!1sen!2s!4v1672856248313!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="toggleCart()">&times;</span>
+            <h2>Your Order</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div id="cart-total" class="cart-total"></div>
+            <div class="modal-footer-buttons">
+                <button id="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+                <button id="whatsapp-order" class="btn btn-whatsapp disabled">Order via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>Rotash</h3>
+                <p>Quality you can taste. The best and the tastiest dairy products from Zakho.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> Zakho, Hetiyan</p>
+                <p><a href="tel:+9647507544111">Phone: 0750 754 4111</a></p>
+                <p><a href="tel:+9647703515444">Phone 2: 0770 351 5444</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                 <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rotash Dairy. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
